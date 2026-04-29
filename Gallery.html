@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Jevlin Misael Chandra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== OFFCANVAS MOBILE NAV ===== -->
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel">UC People</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-2"></i>Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="About.html"><i class="bi bi-person me-2"></i>About</a></li>
+      <li class="nav-item"><a class="nav-link" href="Skills.html"><i class="bi bi-lightning me-2"></i>Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="Projects.html"><i class="bi bi-folder me-2"></i>Projects</a></li>
+      <li class="nav-item"><a class="nav-link active" href="Gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">UC People</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3 animate-fade-in-up">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Gallery</li>
+      </ol>
+    </nav>
+    <span class="section-label animate-fade-in-up">Momen Berharga</span>
+    <h1 class="page-hero-title animate-fade-in-up delay-1">Galeri Foto</h1>
+    <p class="page-hero-lead animate-fade-in-up delay-2">
+      Koleksi foto dari berbagai kegiatan, event, dan momen yang pernah saya jalani.
+    </p>
+  </div>
+</section>
+
+<!-- ===== CAROUSEL ===== -->
+<section class="section-padding bg-light-blue">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Highlight</span>
+      <h2 class="section-title">Foto Pilihan</h2>
+      <div class="blue-divider"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-9 reveal">
+        <div id="carouselFeatured" class="carousel slide carousel-fade shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselFeatured" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/CRC.jpeg" class="d-block w-100" style="height:380px; object-fit:cover;" alt="Highlight 1">
+              <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.5);border-radius:12px;padding:1rem">
+                <h5>🤖</h5>
+                <p class="small">Bikin Robot</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/CRC2.jpeg" class="d-block w-100" style="aspect-ratio: 16/9; object-fit: cover;" alt="Highlight 1">
+              <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.5);border-radius:12px;padding:1rem">
+                <h5>🎮</h5>
+                <p class="small">Saat Lomba</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/BOJES.jpeg" class="d-block w-100" style="height:380px; object-fit:cover;" alt="Highlight 1">
+              <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.5);border-radius:12px;padding:1rem">
+                <h5>😺</h5>
+                <p class="small">Miaw🐈</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatured" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatured" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY GRID ===== -->
+<section class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Semua Foto</span>
+      <h2 class="section-title">Koleksi Galeri</h2>
+      <div class="blue-divider"></div>
+    </div>
+
+    <!-- Filter -->
+    <div class="text-center mb-5 reveal">
+      <div class="btn-group flex-wrap gap-2" role="group">
+        <button class="btn btn-primary rounded-pill px-4" onclick="filterGallery('all', this)">Semua</button>
+        <button class="btn btn-outline-primary rounded-pill px-4" onclick="filterGallery('kegiatan', this)">Kegiatan</button>
+        <button class="btn btn-outline-primary rounded-pill px-4" onclick="filterGallery('coding', this)">Coding</button>
+        <button class="btn btn-outline-primary rounded-pill px-4" onclick="filterGallery('event', this)">Event</button>
+      </div>
+    </div>
+
+    <div class="row g-4" id="galleryGrid">
+      <!-- Row 1 -->
+      <div class="row g-4" id="galleryGrid">
+  <div class="col-lg-4 col-md-6 gallery-filter-item reveal" data-cat="coding">
+    <div class="gallery-placeholder reveal" data-title="Setup Coding" data-desc="Fokus pengerjaan proyek di laboratorium komputer.">
+      <img src="image/BOJES.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Miaw1</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 gallery-filter-item reveal" data-cat="event" style="transition-delay:0.1s">
+    <div class="gallery-placeholder" data-title="Hackathon 2022" data-desc="Momen intensif pengerjaan solusi digital.">
+      <img src="image/BOJES1.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Masjid ChengHo</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 gallery-filter-item reveal" data-cat="kegiatan" style="transition-delay:0.2s">
+    <div class="gallery-placeholder" data-title="Kerja Kelompok" data-desc="Kolaborasi antar mahasiswa di Universitas Ciputra.">
+      <img src="image/BOJES7.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Miaw2</p>
+  </div>
+
+  <div class="col-lg-6 col-md-6 gallery-filter-item reveal" data-cat="event">
+    <div class="gallery-placeholder" data-title="Seminar Teknologi" data-desc="Menghadiri seminar teknologi berskala nasional." style="height:280px">
+      <img src="image/BOJES3.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Miaw3</p>
+  </div>
+
+  <div class="col-lg-6 col-md-6 gallery-filter-item reveal" data-cat="coding" style="transition-delay:0.15s">
+    <div class="gallery-placeholder" data-title="Project Collaboration" data-desc="Diskusi teknis pengembangan aplikasi." style="height:280px">
+      <img src="image/BOJES4.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Miaw4</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 gallery-filter-item reveal" data-cat="kegiatan">
+    <div class="gallery-placeholder" data-title="Presentasi Tugas" data-desc="Sesi presentasi hasil project akhir.">
+      <img src="image/BOJES5.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Miaw5</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 gallery-filter-item reveal" data-cat="event" style="transition-delay:0.1s">
+    <div class="gallery-placeholder" data-title="Workshop Bootstrap" data-desc="Belajar framework CSS untuk pengembangan web.">
+      <img src="image/BOJES6.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Miaw6</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 gallery-filter-item reveal" data-cat="coding" style="transition-delay:0.2s">
+    <div class="gallery-placeholder" data-title="Late Night Coding" data-desc="Menyelesaikan logic program sebelum deadline.">
+      <img src="image/CRC.jpeg" style="width:100%; height:100%; object-fit:cover; object-position: center; position:absolute; top:0; left:0;">
+      <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-overlay-icon"></i></div>
+    </div>
+    <p class="text-center small text-muted mt-2 fw-semibold">Robotic</p>
+  </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">UC People</div>
+        <p class="footer-desc mt-2">Portofolio pribadi Jevlin Misael Chandra – Mahasiswa Teknik Informatika yang bersemangat di Pemrograman.</p>
+          <div class="social-links mt-3">
+            <a href="https://github.com/Serverings" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-github"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/jevlin-misael-chandra-17159a3a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/jevlinchandra?igsh=MWdwOWRjNG5pbjk1aA==" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-instagram"></i>
+            </a>
+            
+            <a href="#" class="social-btn">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <p class="footer-heading">Navigasi</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <p class="footer-heading">Keahlian</p>
+        <ul class="footer-links">
+          <li><a href="#">Java</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Bootstrap</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Lari</a></li>
+          <li><a href="#">Menunda Pengerjaan</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <p class="footer-heading">Kontak</p>
+        <ul class="footer-links">
+          <li><i class="bi bi-envelope me-2 text-primary"></i>jevlinchandra7@gmail.com</li>
+          <li><i class="bi bi-telephone me-2 text-primary"></i>+62 821 9520 9369</li>
+          <li><i class="bi bi-geo-alt me-2 text-primary"></i>Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy text-center">© 2026 Jevlin Misael Chandra.</p>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

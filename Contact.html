@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Jevlin Misael Chandra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== OFFCANVAS MOBILE NAV ===== -->
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel">UC People</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-2"></i>Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="About.html"><i class="bi bi-person me-2"></i>About</a></li>
+      <li class="nav-item"><a class="nav-link" href="Skills.html"><i class="bi bi-lightning me-2"></i>Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="Projects.html"><i class="bi bi-folder me-2"></i>Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="Gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
+      <li class="nav-item"><a class="nav-link active" href="Contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">UC People</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3 animate-fade-in-up">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+    </nav>
+    <span class="section-label animate-fade-in-up">Hubungi Saya</span>
+    <h1 class="page-hero-title animate-fade-in-up delay-1">Mari Berkolaborasi!</h1>
+    <p class="page-hero-lead animate-fade-in-up delay-2">
+      Punya proyek menarik atau sedang kangen saya?
+    </p>
+  </div>
+</section>
+
+<!-- ===== CONTACT INFO CARDS ===== -->
+<section class="section-padding bg-light-blue">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-sm-6 reveal">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <h5 class="fw-bold mb-1">Email</h5>
+          <p class="text-muted small mb-2">Kirim pesan kapan saja</p>
+          <a href="mailto:jevlinchandra7@gmail.com" class="text-primary fw-semibold text-decoration-none">jevlinchandra7@gmail.com</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 reveal" style="transition-delay:0.15s">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <h5 class="fw-bold mb-1">WhatsApp</h5>
+          <p class="text-muted small mb-2">Chat langsung via WA</p>
+          <a href="https://wa.me/6282195209369" class="text-primary fw-semibold text-decoration-none">+62 821 9520 9369</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 reveal" style="transition-delay:0.3s">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <h5 class="fw-bold mb-1">LinkedIn</h5>
+          <p class="text-muted small mb-2">Terhubung secara profesional</p>
+          <a href="https://www.linkedin.com/in/jevlin-misael-chandra-17159a3a1" target="_blank" rel="noopener noreferrer" class="text-primary fw-semibold text-decoration-none">
+            Jevlin Misael Chandra
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <!-- Left info -->
+      <div class="col-lg-5 reveal animate-fade-in-left">
+        <span class="section-label">Kirim Pesan</span>
+        <h2 class="section-title">Ceritakan Proyekmu!</h2>
+        <div class="blue-divider blue-divider-left"></div>
+        <p class="text-muted mb-4" style="line-height:1.8">
+          Apakah kamu membutuhkan teman untuk bercerita atau berbincang serta berdiskusi silahkan hubungi saya, saya akan merespon secepat yang saya bisa (Bisa jadi 2 jam baru di balas)
+        </p>
+
+        <div class="d-flex align-items-start gap-3 mb-3">
+          <div class="contact-icon flex-shrink-0" style="width:44px;height:44px;font-size:1.2rem">⚡</div>
+          <div>
+            <h6 class="fw-bold mb-0">Respon Cepat</h6>
+            <p class="text-muted small mb-0">Biasanya saya membalas dalam hitungan jam -- atau hari HEHE</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-start gap-3 mb-3">
+          <div class="contact-icon flex-shrink-0" style="width:44px;height:44px;font-size:1.2rem">💡</div>
+          <div>
+            <h6 class="fw-bold mb-0">Teman Ngobrol Gratis</h6>
+            <p class="text-muted small mb-0">Diskusi tanpa perlu khawatir boncos </p>
+          </div>
+        </div>
+        <div class="d-flex align-items-start gap-3">
+          <div class="contact-icon flex-shrink-0" style="width:44px;height:44px;font-size:1.2rem">🤝</div>
+          <div>
+            <h6 class="fw-bold mb-0">Kolaborasi Terbuka</h6>
+            <p class="text-muted small mb-0">Selalu siap untuk peluang kolaborasi baru</p>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="mt-4">
+          <p class="fw-semibold mb-3">Temukan saya di:</p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com/Serverings" target="_blank" rel="noopener noreferrer" class="social-btn" style="background:rgba(13,110,253,0.1);border-color:rgba(13,110,253,0.2);color:var(--primary)"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/jevlin-misael-chandra-17159a3a1" target="_blank" rel="noopener noreferrer" class="social-btn" style="background:rgba(13,110,253,0.1);border-color:rgba(13,110,253,0.2);color:var(--primary)"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/jevlinchandra?igsh=MWdwOWRjNG5pbjk1aA==" target="_blank" rel="noopener noreferrer" class="social-btn" style="background:rgba(13,110,253,0.1);border-color:rgba(13,110,253,0.2);color:var(--primary)"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/jevlinmc" target="_blank" rel="noopener noreferrer" class="social-btn" style="background:rgba(13,110,253,0.1);border-color:rgba(13,110,253,0.2);color:var(--primary)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right form -->
+      <div class="col-lg-7 reveal animate-fade-in-right">
+        <div class="card border-0 shadow-sm p-4 p-md-5">
+
+          <!-- Alert -->
+          <div id="formAlert" class="alert d-none mb-4" role="alert"></div>
+
+          <div id="contactForm">
+            <div class="row g-4">
+              <!-- Name -->
+              <div class="col-md-6">
+                <label for="name" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                <div class="invalid-feedback">Nama wajib diisi (minimal 3 karakter).</div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="email" class="form-label">Alamat Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" placeholder="nama@email.com">
+                <div class="invalid-feedback">Masukkan email yang valid.</div>
+              </div>
+
+              <!-- Subject -->
+              <div class="col-12">
+                <label for="subject" class="form-label">Subjek <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="subject" placeholder="Topik pesan Anda">
+                <div class="invalid-feedback">Subjek wajib diisi (minimal 5 karakter).</div>
+              </div>
+
+              <!-- Topic Select -->
+              <div class="col-12">
+                <label for="topic" class="form-label">Kategori</label>
+                <select class="form-select" id="topic">
+                  <option value="">-- Pilih Kategori --</option>
+                  <option value="project">💼 Kerjasama Project</option>
+                  <option value="freelance">🎯 Freelance</option>
+                  <option value="konsultasi">💡 Konsultasi</option>
+                  <option value="lainnya">📌 Lainnya</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="col-12">
+                <label for="message" class="form-label">
+                  Pesan <span class="text-danger">*</span>
+                  <small class="text-muted ms-2 fw-normal" id="msgCounter">0 karakter</small>
+                </label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Ceritakan lebih detail tentang kebutuhan Anda..."></textarea>
+                <div class="invalid-feedback">Pesan wajib diisi (minimal 20 karakter).</div>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="agreeCheck">
+                  <label class="form-check-label small text-muted" for="agreeCheck">
+                    Saya menyetujui bahwa data yang saya isi akan digunakan untuk keperluan komunikasi.
+                  </label>
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <div class="col-12">
+                <button type="button" class="btn btn-primary w-100 py-3" id="submitBtn" onclick="handleSubmit()">
+                  <i class="bi bi-send me-2"></i>Kirim Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ SECTION ===== -->
+<section class="section-padding bg-light-blue">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Pertanyaan Umum</h2>
+      <div class="blue-divider"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 reveal">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item border border-light-blue mb-3 rounded-3 overflow-hidden">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Berapa lama waktu pengerjaan sebuah website?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted small">
+                Tergantung kompleksitas project. Website sederhana bisa selesai dalam 1-2 minggu. Untuk project yang lebih kompleks seperti aplikasi web dengan database, bisa membutuhkan 1-2 bulan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3 overflow-hidden">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Teknologi apa yang dikuasai?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted small">
+                Saya mengetahui cara menggunakan Java,HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, dan familiar dengan Git. Untuk detail lengkapnya, silakan kunjungi halaman Skills.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">UC People</div>
+        <p class="footer-desc mt-2">Portofolio pribadi Jevlin Misael Chandra – Mahasiswa Teknik Informatika yang bersemangat di dunia Pemrograman.</p>
+        <div class="social-links mt-3">
+          <a href="#" class="social-btn"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <p class="footer-heading">Navigasi</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <p class="footer-heading">Keahlian</p>
+        <ul class="footer-links">
+          <li><a href="#">Java</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Bootstrap</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Lari</a></li>
+          <li><a href="#">Menunda Pengerjaan</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <p class="footer-heading">Kontak</p>
+        <ul class="footer-links">
+          <li><i class="bi bi-envelope me-2 text-primary"></i>jevlinchandra7@gmail.com</li>
+          <li><i class="bi bi-telephone me-2 text-primary"></i>+62 821 9520 9369</li>
+          <li><i class="bi bi-geo-alt me-2 text-primary"></i>Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy text-center">© 2026 Jevlin Misael Chandra.</p>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+// ============================
+// CONTACT FORM VALIDATION
+// (inline on this page for clear reference)
+// ============================
+const nameInput   = document.getElementById('name');
+const emailInput  = document.getElementById('email');
+const subjectInput= document.getElementById('subject');
+const messageInput= document.getElementById('message');
+const formAlert   = document.getElementById('formAlert');
+const submitBtn   = document.getElementById('submitBtn');
+
+// Character counter
+messageInput.addEventListener('input', function() {
+  document.getElementById('msgCounter').textContent = this.value.length + ' karakter';
+});
+
+function showError(input, msg) {
+  input.classList.remove('is-valid');
+  input.classList.add('is-invalid');
+  const fb = input.nextElementSibling;
+  if (fb && fb.classList.contains('invalid-feedback')) fb.textContent = msg;
+}
+function showSuccess(input) {
+  input.classList.remove('is-invalid');
+  input.classList.add('is-valid');
+}
+
+function validateName() {
+  const v = nameInput.value.trim();
+  if (!v) { showError(nameInput, 'Nama tidak boleh kosong.'); return false; }
+  if (v.length < 3) { showError(nameInput, 'Nama minimal 3 karakter.'); return false; }
+  showSuccess(nameInput); return true;
+}
+function validateEmail() {
+  const v = emailInput.value.trim();
+  if (!v) { showError(emailInput, 'Email tidak boleh kosong.'); return false; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { showError(emailInput, 'Format email tidak valid.'); return false; }
+  showSuccess(emailInput); return true;
+}
+function validateSubject() {
+  const v = subjectInput.value.trim();
+  if (!v) { showError(subjectInput, 'Subjek tidak boleh kosong.'); return false; }
+  if (v.length < 5) { showError(subjectInput, 'Subjek minimal 5 karakter.'); return false; }
+  showSuccess(subjectInput); return true;
+}
+function validateMessage() {
+  const v = messageInput.value.trim();
+  if (!v) { showError(messageInput, 'Pesan tidak boleh kosong.'); return false; }
+  if (v.length < 20) { showError(messageInput, 'Pesan minimal 20 karakter.'); return false; }
+  showSuccess(messageInput); return true;
+}
+
+// Live validation on blur
+nameInput.addEventListener('blur', validateName);
+emailInput.addEventListener('blur', validateEmail);
+subjectInput.addEventListener('blur', validateSubject);
+messageInput.addEventListener('blur', validateMessage);
+
+function handleSubmit() {
+  const ok = validateName() & validateEmail() & validateSubject() & validateMessage();
+
+  if (ok) {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Mengirim...';
+
+    setTimeout(() => {
+      formAlert.className = 'alert alert-success';
+      formAlert.innerHTML = `<i class="bi bi-check-circle-fill me-2"></i><strong>Pesan berhasil dikirim!</strong> Terima kasih, saya akan membalas dalam 1×24 jam.`;
+      formAlert.classList.remove('d-none');
+      formAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Reset
+      [nameInput, emailInput, subjectInput, messageInput].forEach(i => {
+        i.value = '';
+        i.classList.remove('is-valid', 'is-invalid');
+      });
+      document.getElementById('topic').value = '';
+      document.getElementById('agreeCheck').checked = false;
+      document.getElementById('msgCounter').textContent = '0 karakter';
+
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<i class="bi bi-send me-2"></i>Kirim Pesan';
+
+      setTimeout(() => formAlert.classList.add('d-none'), 6000);
+    }, 1800);
+
+  } else {
+    formAlert.className = 'alert alert-danger';
+    formAlert.innerHTML = `<i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Ada kesalahan!</strong> Periksa kembali form di atas.`;
+    formAlert.classList.remove('d-none');
+  }
+}
+</script>
+</body>
+</html>

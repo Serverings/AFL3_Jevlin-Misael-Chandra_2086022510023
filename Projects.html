@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects – Jevlin Misael Chandra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== OFFCANVAS MOBILE NAV ===== -->
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel">UC People</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-1">
+      <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-2"></i>Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="About.html"><i class="bi bi-person me-2"></i>About</a></li>
+      <li class="nav-item"><a class="nav-link" href="Skills.html"><i class="bi bi-lightning me-2"></i>Skills</a></li>
+      <li class="nav-item"><a class="nav-link active" href="Projects.html"><i class="bi bi-folder me-2"></i>Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="Gallery.html"><i class="bi bi-images me-2"></i>Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">UC People</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3 animate-fade-in-up">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Projects</li>
+      </ol>
+    </nav>
+    <span class="section-label animate-fade-in-up">Karya Saya</span>
+    <h1 class="page-hero-title animate-fade-in-up delay-1">Project & Portofolio</h1>
+    <p class="page-hero-lead animate-fade-in-up delay-2">
+      Kumpulan proyek yang telah saya kerjakan selama belajar dan berkarier di dunia web development.
+    </p>
+  </div>
+</section>
+
+<!-- ===== FEATURED PROJECT ===== -->
+<section class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-label">Semua Project</span>
+      <h2 class="section-title">Project yang Telah Dikerjakan</h2>
+      <div class="blue-divider"></div>
+      <p class="section-subtitle mx-auto">Dari web statis hingga aplikasi web dinamis dengan database.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="text-center mb-5 reveal">
+      <div class="btn-group flex-wrap gap-2" role="group">
+        <button class="btn btn-primary rounded-pill px-4" onclick="filterProject('all', this)">Semua</button>
+        <button class="btn btn-outline-primary rounded-pill px-4" onclick="filterProject('web', this)">Web</button>
+        <button class="btn btn-outline-primary rounded-pill px-4" onclick="filterProject('design', this)">Design</button>
+        <button class="btn btn-outline-primary rounded-pill px-4" onclick="filterProject('app', this)">Aplikasi</button>
+      </div>
+    </div>
+
+    <div class="row g-4" id="projectsGrid">
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 project-item reveal" data-category="web">
+        <div class="project-card h-100">
+          <div class="overflow-hidden">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#e8f0fe,#c7d9ff)">🏠</div>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Gradle</span>
+            </div>
+            <h5 class="fw-bold mb-2">Advanced Programming Smart House</h5>
+            <p class="text-muted small mb-3">Aplikasi berbasis Java untuk mengelola sistem rumah pintar dengan fitur kontrol jarak jauh dan pemantauan real-time.</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                <i class="bi bi-eye me-1"></i>Detail
+              </a>
+              <a href="https://github.com/IMT-UC-Makassar/afl-2-case-study-smarthome-Serverings.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6 project-item reveal" data-category="app" style="transition-delay:0.1s">
+        <div class="project-card h-100">
+          <div class="overflow-hidden">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#f0e8fe,#ddc7ff)">♟️</div>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Gradle</span>
+              <span class="project-tag">GitHub</span>
+            </div>
+            <h5 class="fw-bold mb-2">Tower Of Hanoi</h5>
+            <p class="text-muted small mb-3">Aplikasi yang bertujuan untuk menyusun Tower Of Hanoi yang memiliki 2 warna agar sesuai di posisi towernya.</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                <i class="bi bi-eye me-1"></i>Detail
+              </a>
+              <a href="https://github.com/IMT-UC-Makassar/ds-w8-afl2-tower-of-hanoi-Serverings.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 project-item reveal" data-category="design" style="transition-delay:0.2s">
+        <div class="project-card h-100">
+          <div class="overflow-hidden">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#e8fef0,#c7ffdd)">🤖</div>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Gradle</span>
+            </div>
+            <h5 class="fw-bold mb-2">OOODriver</h5>
+            <p class="text-muted small mb-3">Mengubah objek dunia nyata menjadi sebuah objek di program yang bisa saling berinteraksi sama seperti di dunia nyata.</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                <i class="bi bi-eye me-1"></i>Detail
+              </a>
+              <a href="https://github.com/Serverings/Kelompok4_KamenRider_AP_Week9.git"  target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-figma me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-4 col-md-6 project-item reveal" data-category="web">
+        <div class="project-card h-100">
+          <div class="overflow-hidden">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#fef8e8,#ffe7c7)">🍕</div>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h5 class="fw-bold mb-2">To Be Continue</h5>
+            <p class="text-muted small mb-3">TBC</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                <i class="bi bi-eye me-1"></i>Detail
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-link-45deg me-1"></i>Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-lg-4 col-md-6 project-item reveal" data-category="app" style="transition-delay:0.1s">
+        <div class="project-card h-100">
+          <div class="overflow-hidden">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#fee8e8,#ffc7c7)">📝</div>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">LocalStorage</span>
+            </div>
+            <h5 class="fw-bold mb-2">To Be Continue</h5>
+            <p class="text-muted small mb-3">TBC</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                <i class="bi bi-eye me-1"></i>Detail
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-link-45deg me-1"></i>Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-lg-4 col-md-6 project-item reveal" data-category="web" style="transition-delay:0.2s">
+        <div class="project-card h-100">
+          <div class="overflow-hidden">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#e8f8fe,#c7ecff)">📰</div>
+          </div>
+          <div class="card-body">
+            <div class="project-tags">
+              <span class="project-tag">WordPress</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">CSS</span>
+            </div>
+            <h5 class="fw-bold mb-2">To Be Continue</h5>
+            <p class="text-muted small mb-3">TBC</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                <i class="bi bi-eye me-1"></i>Detail
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-link-45deg me-1"></i>Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECT MODAL 1 ===== -->
+<div class="modal fade" id="projectModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Advanced Programming Smart House</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="project-img-placeholder mb-4 rounded-3" style="background:linear-gradient(135deg,#e8f0fe,#c7d9ff);height:200px">🏠</div>
+        <div class="row g-4">
+          <div class="col-md-8">
+            <h6 class="fw-bold">Deskripsi Project</h6>
+            <p class="text-muted small">Aplikasi berbasis Java untuk mengelola sistem rumah pintar dengan fitur kontrol jarak jauh dan pemantauan real-time.</p>
+            <h6 class="fw-bold mt-3">Fitur Utama</h6>
+            <ul class="text-muted small">
+              <li> Kontrol jarak jauh perangkat rumah</li>
+              <li> Pemantauan real-time kondisi rumah</li>
+              <li> Notifikasi dan alarm otomatis</li>
+              <li> Integrasi dengan asisten virtual</li>
+              <li> Antarmuka pengguna yang ramah</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">Teknologi</h6>
+            <div class="project-tags flex-column">
+              <span class="project-tag mb-1">Java</span>
+              <span class="project-tag mb-1">Gradle</span>
+            </div>
+            <h6 class="fw-bold mt-3">Status</h6>
+            <span class="badge bg-success">✅ Selesai</span>
+            <h6 class="fw-bold mt-3">Durasi</h6>
+            <p class="text-muted small">1 minggu</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="https://github.com/IMT-UC-Makassar/afl-2-case-study-smarthome-Serverings.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
+          <i class="bi bi-github me-1"></i>GitHub
+        </a>
+        <a href="#" class="btn btn-primary"><i class="bi bi-link-45deg me-1"></i>Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROJECT MODAL 2 ===== -->
+<div class="modal fade" id="projectModal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">♟️ Tower Of Hanoi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="project-img-placeholder mb-4 rounded-3" style="background:linear-gradient(135deg,#f0e8fe,#ddc7ff);height:200px">♟️</div>
+        <div class="row g-4">
+          <div class="col-md-8">
+            <h6 class="fw-bold">Deskripsi Project</h6>
+            <p class="text-muted small">Aplikasi yang bertujuan untuk menyusun Tower Of Hanoi yang memiliki 2 warna agar sesuai di posisi towernya.</p>
+            <h6 class="fw-bold mt-3">Fitur Utama</h6>
+            <ul class="text-muted small">
+              <li>Memindahkan piring dari satu menara ke menara lain</li>
+              <li>Strategi pemecahan masalah</li>
+              <li>Memisahkan Memisahkan Warna</li>
+              <li>Display piring</li>   
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">Teknologi</h6>
+            <div class="project-tags flex-column">
+              <span class="project-tag mb-1">Java</span>
+              <span class="project-tag mb-1">Gradle</span>
+              <span class="project-tag mb-1">GitHub</span>
+            </div>
+            <h6 class="fw-bold mt-3">Status</h6>
+            <span class="badge bg-success">✅ Selesai</span>
+            <h6 class="fw-bold mt-3">Durasi</h6>
+            <p class="text-muted small">1 minggu</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="https://github.com/IMT-UC-Makassar/ds-w8-afl2-tower-of-hanoi-Serverings.git" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
+          <i class="bi bi-github me-1"></i>GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROJECT MODAL 3 (generic) ===== -->
+<div class="modal fade" id="projectModal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Detail Project</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center py-4">
+        <div class="fs-1 mb-3">🚧</div>
+        <h5 class="fw-bold">Halaman sedang dipersiapkan</h5>
+        <p class="text-muted">Detail lengkap untuk project ini akan segera tersedia. Silakan cek GitHub untuk melihat kode sumbernya.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="#" class="btn btn-primary"><i class="bi bi-github me-1"></i>GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">UC People</div>
+        <p class="footer-desc mt-2">Portofolio pribadi Jevlin Misael Chandra – Mahasiswa Teknik Informatika yang bersemangat di Pemrograman.</p>
+          <div class="social-links mt-3">
+            <a href="https://github.com/Serverings" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-github"></i>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/jevlin-misael-chandra-17159a3a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/jevlinchandra?igsh=MWdwOWRjNG5pbjk1aA==" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-instagram"></i>
+            </a>
+            
+            <a href="#" class="social-btn">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <p class="footer-heading">Navigasi</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <p class="footer-heading">Keahlian</p>
+        <ul class="footer-links">
+          <li><a href="#">Java</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Bootstrap</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Lari</a></li>
+          <li><a href="#">Menunda Pengerjaan</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <p class="footer-heading">Kontak</p>
+        <ul class="footer-links">
+          <li><i class="bi bi-envelope me-2 text-primary"></i>jevlinchandra7@gmail.com</li>
+          <li><i class="bi bi-telephone me-2 text-primary"></i>+62 821 9520 9369</li>
+          <li><i class="bi bi-geo-alt me-2 text-primary"></i>Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy text-center">© 2026 Jevlin Misael Chandra.</p>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
